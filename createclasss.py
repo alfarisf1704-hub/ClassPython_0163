@@ -9,7 +9,7 @@ class rectangle :
     def wholeArea(self):
         return self.length*self.width
     def __str__(self):
-        return str(print("RECTANGLE\n""Long = ",self.length," cm", "\nWide = ",self.width," cm"))
+        return str(print("RECTANGLE\n""Long = ",self.length,"cm", "\nWide = ",self.width,"cm"))
     
 R1 = rectangle()
 long = int(input("Fill the long : "))
@@ -19,5 +19,5 @@ keliling = R1.circumference()
 luas = R1.wholeArea()
 keterangan = R1.__str__()
 
-print("Hasil Operasionalnya :\n""keliling :",keliling, "\nLuas : ",luas )
+print("Hasil Operasionalnya\n""keliling :",keliling,"cm" "\nLuas     :5",luas,"cm" )
 
