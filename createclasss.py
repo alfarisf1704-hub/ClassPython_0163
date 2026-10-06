@@ -1,25 +1,23 @@
 class rectangle :
     length = 0
     width = 0
-    def __init__ (length,width):
-        length = length
-        width = width
-    def circumference(length,width):
-        return 2*(length+width)
-    def wholeArea(length, width):
-        return length*width
-    def __str__(length,width):
-        return str(print("RECTANGLE\n""Long = ",length, "\nWide = ",width))
+    def setLongWide(self,length,width):
+        self.length = length
+        self.width = width
+    def circumference(self):
+        return 2*(self.length+self.width)
+    def wholeArea(self):
+        return self.length*self.width
+    def __str__(self):
+        return str(print("RECTANGLE\n""Long = ",self.length," cm", "\nWide = ",self.width," cm"))
     
-R1= rectangle
-long= R1.length
-wide= R1.width
-long = input("Fill the long :")
-wide = input("Fill the wide :")
+R1 = rectangle()
+long = int(input("Fill the long : "))
+wide = int(input("Fill the wide : "))
+R1.setLongWide(long,wide)
+keliling = R1.circumference()
+luas = R1.wholeArea()
+keterangan = R1.__str__()
 
-R1.__init__(long,wide)
-keliling = R1.circumference(long,wide)
-luas = R1.wholeArea(long,wide)
-keterangan = R1.__str__(long,wide)
-print("keliling :",keliling, "\nLuas : ",luas )
+print("Hasil Operasionalnya :\n""keliling :",keliling, "\nLuas : ",luas )
 
