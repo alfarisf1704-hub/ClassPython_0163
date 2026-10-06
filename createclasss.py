@@ -9,7 +9,7 @@ class rectangle :
     def wholeArea(length, width):
         return length*width
     def __str__(length,width):
-        return str("RECTANGLE\n""Long = ",length, "\nWide = ",width)
+        return str(print("RECTANGLE\n""Long = ",length, "\nWide = ",width))
     
 R1= rectangle
 long= R1.length
