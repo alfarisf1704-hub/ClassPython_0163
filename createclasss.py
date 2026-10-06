@@ -9,12 +9,14 @@ class rectangle :
     def wholeArea(length, width):
         return length*width
     def __str__(length,width):
-        return str(print("RECTANGLE\n""Long = ",length, "\nWide = ",width))
+        return str("RECTANGLE\n""Long = ",length, "\nWide = ",width)
     
-
 R1= rectangle
-R1.__init__(5,4)
-keliling = R1.circumference(5,4)
-luas = R1.wholeArea(5,4)
-keterangan = R1.__str__(5,4)
+long= R1.length
+wide= R1.width
+R1.__init__(long,wide)
+keliling = R1.circumference()
+luas = R1.wholeArea()
+keterangan = R1.__str__()
 print("keliling :",keliling, "\nLuas : ",luas )
+
