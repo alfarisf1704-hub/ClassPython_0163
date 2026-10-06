@@ -6,3 +6,5 @@ class rectangle :
         self.width=width
     def circumference(self):
         return 2*(self.length+self.width)
+    def wholeArea(self):
+        return self.length*self.width
