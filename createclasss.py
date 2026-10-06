@@ -14,9 +14,12 @@ class rectangle :
 R1= rectangle
 long= R1.length
 wide= R1.width
+long = input("Fill the long :")
+wide = input("Fill the wide :")
+
 R1.__init__(long,wide)
-keliling = R1.circumference()
-luas = R1.wholeArea()
-keterangan = R1.__str__()
+keliling = R1.circumference(long,wide)
+luas = R1.wholeArea(long,wide)
+keterangan = R1.__str__(long,wide)
 print("keliling :",keliling, "\nLuas : ",luas )
 
